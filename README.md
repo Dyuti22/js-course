@@ -1,2 +1,2 @@
 # js-course
-A code Repo for javaScript series By Hitesh on Chai &amp; Code
+A code-repo for javaScript series By Hitesh on Chai &amp; Code
