@@ -16,6 +16,8 @@ if(userEmail){
 
 let val1;
 val1 = null ?? 10
+console.log(val1);
 val1 = undefined ?? 12
-val1 = null ?? 10 ?? 100
+console.log(val1);
+val1 = null ?? 10 ?? 100  // 1st of all the values which is not null or undefined
 console.log(val1);
