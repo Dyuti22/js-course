@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photsop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzQhMzN0sJnGfqdi2aHD7fzZWirfyYB1DoFc7EQPiUQ&s" alt="japan"></li>
+            <li><img width="200px" id="japan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE2uEzUIAcN_V5SoHCSsFxBaSdaxyqkBOulF7fcv-dg&s" alt="japan"></li>
+            <li><img width="200px" id="river" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS1ZeDzhagww0gXwic09UMLVxx6GB1YNeR9w7u1mpmA&s" alt="river"></li>
+            <li><img width="200px" id="owl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKff3fFpc4knVDZt7PrX1l9rsMwka0vq_kJpUDjD9-iA&s" alt="owl" ></li>
+            <li><img width="200px" id="prayer" src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk5MTI3ODIxNjEwNjU3NzQ4/prayers-for-a-friend.jpg" alt="prayer"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl click")
+    // }
+
+    // attachEvent()
+    //jQuery - on
+
+    // type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', (e)=>{
+    //     console.log("Clicked inside UL");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', (e)=>{
+    //     console.log("Clicked owl");
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click', (e)=>{
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log('google clicked');
+    // })
+
+    document.getElementById('images').addEventListener('click',(e)=>{
+        console.log(e.target.tagName);
+        if(e.target.tagName ==='IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        //removeIt.parentNode.removeChild(removeIt)
+    },false)
+
+
+</script>
+</html>
